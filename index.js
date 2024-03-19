@@ -45,10 +45,10 @@ function convertTimeToWords(time) {
       
   } 
   else if (min == '30') {
-    return dmin[min]+ ' past ' + dhour[parseInt(hour)]
+    return dmin[parseInt(min)]+ ' past ' + dhour[parseInt(hour)]
   }
   else if (min < 30) {
-    return dmin[min] + " past " + dhour[parseInt(hour)]
+    return dmin[parseInt(min)] + " past " + dhour[parseInt(hour)]
   }
   else if (min > 30) {
     return dmin[60 - parseInt(min)] + " to " + dhour[parseInt(hour) + 1]
